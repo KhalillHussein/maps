@@ -46,7 +46,6 @@ class MapboxMapBuilder implements MapboxMapOptionsSink {
     controller.setMyLocationTrackingMode(myLocationTrackingMode);
     controller.setMyLocationRenderMode(myLocationRenderMode);
     controller.setTrackCameraPosition(trackCameraPosition);
-    controller.
     if (null != bounds) {
       controller.setCameraTargetBounds(bounds);
     }
