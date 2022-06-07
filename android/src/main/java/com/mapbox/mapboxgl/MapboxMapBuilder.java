@@ -14,7 +14,7 @@ import io.flutter.plugin.common.BinaryMessenger;
 
 class MapboxMapBuilder implements MapboxMapOptionsSink {
   public final String TAG = getClass().getSimpleName();
-  private final MapboxMapOptions options = new MapboxMapOptions().attributionEnabled(true);
+  private final MapboxMapOptions options = new MapboxMapOptions().textureMode(true).attributionEnabled(true);
   private boolean trackCameraPosition = false;
   private boolean myLocationEnabled = false;
   private boolean dragEnabled = true;
@@ -44,7 +44,7 @@ class MapboxMapBuilder implements MapboxMapOptionsSink {
     controller.setMyLocationTrackingMode(myLocationTrackingMode);
     controller.setMyLocationRenderMode(myLocationRenderMode);
     controller.setTrackCameraPosition(trackCameraPosition);
-
+    controller.
     if (null != bounds) {
       controller.setCameraTargetBounds(bounds);
     }
